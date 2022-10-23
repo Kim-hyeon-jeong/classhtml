@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>31-form</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <p>xhtml</p>
+    <form name="member" action="welcome.html" method="get">
+<!-- 속성 사이는 반드시 띄워써야함. 연동방식 기본get방식 -->
+<!-- action은 전송후 축하합니다뜨도록, 개발자가 쓰는 영역이기는 하다 -->
+        <p>
+            <!-- <label for="uName">이름</label>
+            <input type="text" id="uName" placeholder="홍길동" required> -->
+            <label>이름 <input type="text" placeholder="홍길동" required></label>
+            <!-- placeholder는 장식이다 실제글자아니다 -->
+            <!-- for id 쓰기 귀찮으면 3번째줄로 써도 무방함 -->
+            <!-- label은 form요소에 대한 제목을 쓸때 쓴다 -->
+        </p>
+
+        <!-- 하나의 인풋안에 라벨여러개가능하지만 하나의라벨안에 여러개인풋쓸수없다 -->
+        <p>
+            <label for="uID">아이디</label>
+            <input type="text" id="uID" required>
+            <!-- required해야 필수입력해야 넘어가지않음 -->
+        </p>
+        <p>
+            <label>비밀번호</label>
+            <input type="password" id="uPass">
+            <!-- 비밀번호는 FOR와 ID매칭 안해도 오류안남 -->
+        </p>
+        <p>
+            성별
+            <label for="man">남자</label>
+            <input type="radio" id="man" name="gender">
+            <label for="women">여자</label>
+            <input type="radio" id="women" name="gender">
+        </p>
+        <p>
+            취미
+            <label for="book">독서</label>
+            <input type="checkbox" id="book">
+            <label for="movie">영화보기</label>
+            <input type="checkbox" id="movie">
+        </p>
+        <p>
+            <label for="photo">사진</label>
+            <input type="file" id="photo">
+        </p>
+        <p>
+            <label for="phone">전화번호</label>
+            <input type="text" id="phone" title="전화번호 첫번째 자리입니다" size="4" maxlength="4"> -
+            <input type="text" title="전화번호 두번째 자리입니다" size="4" maxlength="4"> -
+            <input type="text" title="전화번호 세번째 자리입니다" size="4" maxlength="4"> 
+        </p>
+        <p>
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
+            <button>홈으로</button>
+        </p>
+        <p>
+            <input type="text" value="검색어를 입력하세요">
+            <input type="image" src="images/icon_search.png" alt="검색아이콘">
+            <!-- 위에 image타입 앵커가 아닌데도 손모양나옴> -->
+            <!-- value는 실제 글자이다 placeholder와 다름 -->
+            <!-- 이미지는 SRC와 ALT가 반드시 필요하다 -->
+        </p>
+    </form>
+    </body>
+    </html>

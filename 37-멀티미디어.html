@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>37-멀티미디어</title>
+  </head>
+  <body>
+    <h1>비디오</h1>
+    <video src="video/videoplayback.mp4" autoplay controls></video>
+    <!-- autoplay 자동재생 controls조정 -->
+    <!-- 아이폰만 autoplay controls muted loop playsinline해야 제대로재생됨 -->
+    <!-- autoplay="autoplay" muted라고 쓰면 됨 -->
+    <!-- youtube앞에 ss붙여서 영상다운로드받는다 -->
+    <h1>오디오</h1>
+    <audio src="audio/ZICO_Anysong.mp3" controls></audio>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/9oP-VZcqoxw"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <!-- 외부에서 퍼가기해온 (유투브공유클릭)아이프래임으로 가져온건 오류검사시 오류뜬다 -->
+  </body>
+</html>

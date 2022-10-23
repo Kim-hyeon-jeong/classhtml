@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40-시맨틱태그</title>
+</head>
+<body>
+    <h1>시맨틱태그</h1>
+    1. header : html 상단부분을 뜻한다. 로고, 메뉴, 탑메뉴 등을 자식요소로 가진다
+    <header> </header>
+    2. footer : html 하단부분을 뜻한다. 하단로고, 주소, sns, 패밀리 사이트를 자식요소로 가진다
+    <footer> </footer>
+    3. section : 맥락이 같은 요소들을 구분할때 사용한다. 글자가 많은 부분 본문 제목이 반드시 첫번째
+    자식요소로 온다. 그렇지않으면 경고나 오류가 뜬다.
+    <section>
+        <h2>필수제목</h2>
+        내용들
+    </section>
+    4. article : 독립된 하나의 글 단위를 구분할때 사용한다. 글자가 많은 부분 본문 제목이 반드시 첫번째
+    자식요소로 온다. 그렇지않으면 경고나 오류가 뜬다.
+    <article>
+        <h2>필수제목</h2>
+        포럼, 논평
+    </article>
+
+    <section>
+        <h2></h2>
+        <article>
+            <h2></h2>
+        </article>
+    </section>
+    <article>
+        <h2></h2>
+        <section>
+            <h2></h2>
+        </section>
+    </article>
+    5. 메뉴를 나타낼때 사용한다
+    <nav></nav>
+    6. aside : 본문의 주요내용이 아닌 사이드로 있는 요소를 묶을때 사용한다
+    퀵메뉴, 서브페이지의 서브메뉴를 묶을때 사용한다
+    <aside></aside>
+</body>
+</html>
